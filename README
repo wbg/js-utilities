@@ -10,8 +10,8 @@ A small Javascript Proxy for loading Flickr Photos from your Account.
 * Needs some Help from mod_rewrite or some server side script.
   Example for mod_rewrite:
 	file: .htaccess
-	> RewriteEngine on
-	> RewriteRule ^rest/(.*)$ http://api.flickr.com/services/rest/?api_key=YOUR_API_KEY_HERE$1 [QSA,P]
+		RewriteEngine on
+		RewriteRule ^rest/(.*)$ http://api.flickr.com/services/rest/?api_key=YOUR_API_KEY_HERE$1 [QSA,P]
 
   The "rest" URL part can be changed in the script file. 
 
