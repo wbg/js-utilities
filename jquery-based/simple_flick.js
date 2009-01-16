@@ -8,8 +8,8 @@ SimpleFlick = function() {
 	this.rest = 'rest/?';
 	this.photo_base = 'http://farm4.static.flickr.com/';
 	this.apiCall = function(method, args) {
-		args.format 			= 'json';
-		args.nojsoncallback	= 1;
+		args.format = 'json';
+		args.nojsoncallback = 1;
 		args.method = method;
 		var url = this.rest + jQuery.param(args);
 		return eval('('+$.ajax({url:url,async: false}).responseText+')');

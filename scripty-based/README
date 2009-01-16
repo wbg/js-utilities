@@ -1,0 +1,9 @@
+inpage.js
+=========
+add smooth scrolling to inpage links
+
+Usage: 
+	Event.observe(window, load, function(){BetterInpage.init();});
+	optional arguments: 
+		- cssSelector - default 'a' - add a css class to speed this up
+		- duration    - default 0.7 - scroll speed
